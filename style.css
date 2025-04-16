@@ -1,0 +1,170 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f9f9f9 url('images/ornament.png') repeat; /* Қазақи ою-өрнек фоны */
+    color: #333;
+}
+
+header {
+    background: #a83232; /* Жылы қызыл түс */
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.logo {
+    height: 50px;
+    margin: 0 20px;
+}
+
+nav {
+    flex-grow: 1;
+}
+
+nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffd700; /* Сары түс, hover кезінде */
+}
+
+nav select {
+    float: right;
+    padding: 5px;
+    background: #fff;
+    border: none;
+    color: #333;
+}
+
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #a83232;
+}
+
+.main-image {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.button {
+    background: #a83232;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.button:hover {
+    background: #8b2828;
+}
+
+.menu-item {
+    margin: 20px;
+    padding: 10px;
+    background: white;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: left;
+    transition: transform 0.3s;
+}
+
+.menu-item:hover {
+    transform: scale(1.05); /* Анимация: hover кезінде үлкейту */
+}
+
+.menu-image {
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: opacity 0.3s;
+}
+
+.menu-image:hover {
+    opacity: 0.8; /* Анимация: hover кезінде мөлдірлену */
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.gallery-image {
+    max-width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: transform 0.3s;
+}
+
+.gallery-image:hover {
+    transform: scale(1.1); /* Анимация: hover кезінде үлкейту */
+}
+
+form {
+    max-width: 500px;
+    margin: 20px auto;
+    text-align: left;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background: #a83232;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #8b2828;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+    }
+    nav a {
+        display: block;
+        margin: 5px 0;
+    }
+    nav select {
+        float: none;
+        margin-top: 10px;
+    }
+    .menu-item {
+        display: block;
+        margin: 20px auto;
+    }
+}

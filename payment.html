@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Төлем - Qain Jurt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Qain Jurt Logo" class="logo">
+        <nav>
+            <a href="index.html">Басты бет</a>
+            <a href="menu.html">Мәзір</a>
+            <a href="gallery.html">Галерея</a>
+            <a href="payment.html">Төлем</a>
+            <a href="contact.html">Байланыс</a>
+            <select id="language" onchange="changeLanguage()">
+                <option value="kk">Қазақша</option>
+                <option value="ru">Русский</option>
+                <option value="en">English</option>
+            </select>
+        </nav>
+    </header>
+    <main>
+        <h2 id="payment-title">Төлем</h2>
+        <p id="payment-desc">Біз қолма-қол ақша, Kaspi және банк картасын қабылдаймыз.</p>
+        <p>Онлайн тапсырыс беру үшін форманы толтырыңыз:</p>
+        <form action="https://formspree.io/f/your-form-id" method="POST">
+            <label>Аты-жөніңіз:</label><br>
+            <input type="text" name="name" required><br>
+            <label>Телефон:</label><br>
+            <input type="tel" name="phone" required><br>
+            <label>Тапсырыс:</label><br>
+            <textarea name="order" required></textarea><br>
+            <button type="submit">Жіберу</button>
+        </form>
+    </main>
+    <footer>
+        <p>© 2025 Qain Jurt. Барлық құқықтар қорғалған.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мәзір - Qain Jurt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Qain Jurt Logo" class="logo">
+        <nav>
+            <a href="index.html">Басты бет</a>
+            <a href="menu.html">Мәзір</a>
+            <a href="gallery.html">Галерея</a>
+            <a href="payment.html">Төлем</a>
+            <a href="contact.html">Байланыс</a>
+            <select id="language" onchange="changeLanguage()">
+                <option value="kk">Қазақша</option>
+                <option value="ru">Русский</option>
+                <option value="en">English</option>
+            </select>
+        </nav>
+    </header>
+    <main>
+        <h2 id="menu-title">Мәзір</h2>
+        <div class="menu-item">
+            <img src="images/beshbarmak.jpg" alt="Бешбармақ" class="menu-image">
+            <h3>Бешбармақ</h3>
+            <p id="beshbarmak-price">Дәстүрлі ет тағамы – 2500 теңге</p>
+        </div>
+        <div class="menu-item">
+            <img src="images/baursak.jpg" alt="Баурсақ" class="menu-image">
+            <h3>Баурсақ</h3>
+            <p id="baursak-price">5 дана – 800 теңге</p>
+        </div>
+        <div class="menu-item">
+            <img src="images/kymyz.jpg" alt="Қымыз" class="menu-image">
+            <h3>Қымыз</h3>
+            <p id="kymyz-price">Дәстүрлі сусын – 600 теңге</p>
+        </div>
+    </main>
+    <footer>
+        <p>© 2025 Qain Jurt. Барлық құқықтар қорғалған.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
